@@ -1,0 +1,52 @@
+<!DOCPYTE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+		
+        <title>專題呈現哦</title>
+		
+		<!--our css style-->
+		<link rel="stylesheet" type="text/css" href="./static/style/csss.css">
+		
+		<!--jquery-->
+		<script type="text/javascript" src="./static/script/jquery-3.5.1.js"></script>
+		
+		<!--our script-->
+		<script type="text/javascript" src="./static/script/jsss.js"></script>
+		<script type="text/javascript" src="./static/script/show.js"></script>
+		<script type="text/javascript" src="./static/script/submit_run.js"></script>
+    </head>
+
+
+    <body>
+        <h1>施工中</h1>
+        <div id="menu" class="ground">
+            <p>
+                <label for="title" class="ttext">title</label>
+                <input id="title" name="title">
+            </p>
+            <p>
+                <label for="fasta" class="ttext">fasta</label> 主要目標序列<br>
+                <textarea id="fasta" name="fasta" rows="10px" cols="45px"></textarea>
+                <br><br>
+                <label for="other_fasta" class="ttext">additional_fasta</label> 請以">"做為每段序列的開頭(可不填)<br>
+                <textarea id="other_fasta" name="other_fasta" rows="8px" cols="45px"></textarea>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th><button id="more">調整細節</button></th>
+                    </tr>
+                </thead>
+                <tbody id="more_set">
+
+                </tbody>
+            </table>
+
+            <button id="submit">確認送出</button>
+        </div>
+    </body>
+
+
+</html>

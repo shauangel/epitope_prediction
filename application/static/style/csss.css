@@ -1,0 +1,17 @@
+.ground{
+     margin:0 auto;
+}
+.ttext{
+     font-size:25px;
+}
+.origin {
+     background-color: rgb(236, 236, 236);
+}
+.highlight {
+     background-color: rgb(251, 255, 0);
+}
+.float{
+     width: 450px ; 
+     overflow-y: hidden;
+     overflow-x: scroll;
+}
