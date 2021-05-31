@@ -15,7 +15,7 @@ class LEPS:
     def parse_web(self,FASTA):
         FASTA_len = len(FASTA.split(']')[1].replace('\n', ''))
         
-        chrome = webdriver.Chrome('./chromedriver')
+        chrome = webdriver.Chrome('./chromedriver.exe')
         chrome.get("https://leps.biolab.ml/LEPS/")
         
         seq = chrome.find_element_by_name('seq')

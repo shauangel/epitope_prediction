@@ -14,7 +14,7 @@ import copy
 class LBtope:
     
     def parse_web(self, FASTA):
-        chrome = webdriver.Chrome('./chromedriver')
+        chrome = webdriver.Chrome('./chromedriver.exe')
         chrome.get("https://webs.iiitd.edu.in/raghava/lbtope/protein.php")
         
         seq = chrome.find_element_by_name('seq')
@@ -35,7 +35,7 @@ class LBtope:
         return sys_result
     
     def parse_result_web(self, result_url):
-        chrome = webdriver.Chrome('./chromedriver')
+        chrome = webdriver.Chrome('./chromedriver.exe')
         chrome.get(result_url)
         
         while(True):

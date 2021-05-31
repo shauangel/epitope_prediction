@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 class ABCpred:
     def parse_web(self, FASTA):
-        chrome = webdriver.Chrome('./chromedriver')
+        chrome = webdriver.Chrome('./chromedriver.exe')
         chrome.get("https://webs.iiitd.edu.in/raghava/abcpred/ABC_submission.html")
         
         seq = chrome.find_element_by_name('SEQ')

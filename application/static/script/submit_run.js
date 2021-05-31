@@ -2,7 +2,7 @@ function send_message(){
     
     var json_text={
         "title" : document.getElementById("title").value,
-        "data" : document.getElementById("fasta").value + '\n\n' + document.getElementById("other_fasta").value,
+        "data" : document.getElementById("fasta").value +'\n\n' + document.getElementById("other_fasta").value,
         "shortest" : textlong,
         "range" : {
             "LEPS" : select_range[0]/100,
@@ -19,7 +19,7 @@ function send_message(){
     );
     //document.getElementById("menu").innerHTML="";
     $.ajax({
-        url: "http://127.0.0.1:5000/prediction",
+        url: "http://127.0.0.1:5000/prediction",//
         type: "POST",
         data : JSON.stringify(json_text),
         dataType: "json",
@@ -28,13 +28,14 @@ function send_message(){
         success: function(data){
 			result = data['result']
             console.log(data);
+            show(data);
         },
         
         error: function(){
         window.alert('uh oh :(');        
         }
     });
+    //document.write('<\/script>'); 
     
-    show();
 
 }

@@ -57,10 +57,9 @@ def prediction():
             elif sys == 'BepiPred-2':
                 system = Bepipred2()     
             elif sys == 'LBtope':
-                system = LBtope()
+                system = LBtope()             
             else:
                 continue
-            
             for name, seq in fasta.result.items():
                 protein = {'PREDS' : "", 't-coffee' : ""}
                 protein['PREDS'] = system.parse_web(seq)
@@ -84,9 +83,8 @@ def prediction():
     return 'err'
 
 
-
-
-
+if __name__ == "__main__":
+    app.run()
 
 
 

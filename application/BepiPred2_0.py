@@ -6,7 +6,7 @@ import time
 class Bepipred2:
     
     def parse_web(self, FASTA):
-        chrome = webdriver.Chrome('./chromedriver')
+        chrome = webdriver.Chrome('./chromedriver.exe')
         chrome.get("http://www.cbs.dtu.dk/services/BepiPred/")
         
         seq = chrome.find_element_by_name('fasta')

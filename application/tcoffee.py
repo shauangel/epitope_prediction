@@ -13,7 +13,7 @@ import re
 
 class tcoffee:
     def parse_web(self, file):
-        chrome = webdriver.Chrome('./chromedriver')
+        chrome = webdriver.Chrome('./chromedriver.exe')
         chrome.get("http://tcoffee.crg.cat/apps/tcoffee/do:regular")
         
         seqs = chrome.find_element_by_name('seqs')

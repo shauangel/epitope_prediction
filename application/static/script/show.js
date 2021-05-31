@@ -1,10 +1,12 @@
 var result="wertyuiokjhgfdsxcvbnmmwertyuiokjhgfdsxcvbnmm";
-var vote= "01234560000002345000230012345000000234500023";
-var vote_int=[];
-var range=["2~7","14~17","21~22","25~29","36~39","43~44"];
+//var vote= "01234560000002345000230012345000000234500023";
+var v_ABCPred=[],v_BCpreds=[],v_Bcepred=[],v_BepiPred=[],v_LBtope=[],v_LEPS=[];
+var vote=[];
+var result_len=0;
+var range=["2-7","14-17","21-22","25-29","36-39","43-44"];
 var range_int=[];
 var seq=["rtyui","dsxc","mm","rtyui","dsxc","mm"];
-var forward=0;
+var forward=-1;
 /*
 {
     "result" : "",
@@ -18,14 +20,34 @@ var forward=0;
 }
 */
 
-function data_processing(){
-    for(var a=0;a<vote.length;a++){
-        vote_int[a]=parseInt(vote[a]);
+function data_processing(e){
+
+    result=e.result;
+    result_len=e.result.length;
+    for(var a=0;a<result_len;a++){
+        /*
+        v_ABCPred[a]=parseInt(e.vote_6sys.ABCPred[a]);
+        v_BCpreds[a]=parseInt(e.vote_6sys.BCpreds[a]);
+        v_Bcepred[a]=parseInt(e.vote_6sys.Bcepred[a]);
+        v_BepiPred[a]=parseInt(e.vote_6sys.BepiPred[a]);
+        v_LBtope[a]=parseInt(e.vote_6sys.LBtope[a]);
+        v_LEPS[a]=parseInt(e.vote_6sys.LEPS[a]);
+        */
+        vote[a]=e.vote[a];
     }
+
+    for(var a=0;a<e.epitope.length;a++){
+        range[a]=e.epitope[a].range;
+        seq[a]=e.epitope[a].seq;
+    }
+
+    /*for(var a=0;a<vote.length;a++){
+        vote_int[a]=parseInt(vote[a]);
+    }*/
     var b=0;
     for(var a=0;a<range.length;a++){
         //var NewArray = parseInt(range[a].split("~"),10);
-        var Array = range[a].split("~");
+        var Array = range[a].split("-");
         var NewArray=[parseInt(Array[0],10),parseInt(Array[1],10)];
         range_int[b]=NewArray[0]-forward-1;
         b++;
@@ -36,8 +58,8 @@ function data_processing(){
 }
 
 
-function show(){
-    data_processing();
+function show(e){
+    data_processing(e);
     var showshow = document.getElementById("menu");
     var mes="";
     mes+='<p><table id="range_table" class="show_table">'+
@@ -62,8 +84,8 @@ function show(){
         mes+='<td class="votecolor'+vote[a]+'">'+vote[a]+'</td>';
     }
     mes+='</tr></table></div></div></p><p><table id="epitope_table" class="show_table">'+
-         '<col span="1" bgcolor="#8BC795" width=60px></col>'+
-         '<col span="1" bgcolor="#C5E0C2" width=300px></col>';
+         '<col span="1" bgcolor="#8BC795" width=100px></col>'+
+         '<col span="1" bgcolor="#C5E0C2" width=400px></col>';
     for(var a=0;a<range.length;a++){
         mes+='<tr><td>'+range[a]+'</td><td>'+seq[a]+'</td></tr>';
     }
