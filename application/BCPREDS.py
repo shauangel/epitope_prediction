@@ -11,7 +11,11 @@ from bs4 import BeautifulSoup
 
 class BCPREDS:
     def parse_web(self, FASTA):
-        chrome = webdriver.Chrome('./chromedriver')
+        chrome = None
+        try:
+            chrome = webdriver.Chrome('./chromedriver')
+        except:
+            chrome = webdriver.Chrome('./chromedriver.exe')
         chrome.get("http://ailab-projects1.ist.psu.edu:8080/bcpred/predict.html")
         
         seq = chrome.find_element_by_name('sequence')
