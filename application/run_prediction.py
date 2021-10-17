@@ -10,12 +10,7 @@ from flask import jsonify, Flask, request, render_template
 
 #modules
 from FASTA import FASTA
-from LEPS import LEPS
-from ABCpred import ABCpred
-from Bcepred import BcePred
-from BCPREDS import BCPREDS
-from BepiPred2_0 import Bepipred2
-from LBtope import LBtope
+from systemParse import ABCpred, BcePred, BCPREDS, Bepipred2, LBtope, LEPS
 import votefunc
 
 app = Flask(__name__)
