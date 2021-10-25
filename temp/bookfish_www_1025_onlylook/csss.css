@@ -1,0 +1,70 @@
+.ground{
+     margin:0 auto;
+}
+.ttext{
+     font-size:25px;
+}
+.origin {
+     background-color: #FEF9EF;
+}
+.highlight {
+     background-color: #C5E0C2;
+}
+
+.center {
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+
+.float{
+     width: 800px ; 
+     overflow-y: hidden;
+     overflow-x: scroll;
+     margin: 0 auto;
+}
+
+#fasta_epitope td{
+     text-align: center;
+}
+.show_table{
+     margin: 0 auto;
+     
+}
+
+#range_table{
+     background-color: #FFE2B3;
+     border-collapse:collapse;
+}
+#range_table td{
+     border:2px solid #FEF9EF;
+     width: 100px;
+}
+.detail{
+     background-color: #FFCB77;
+     font-weight: bold;
+}
+
+
+.votecolor0{
+     background-color: #17C3B2;
+}
+.votecolor1{
+     background-color: #1AB2AD;
+}
+.votecolor2{
+     background-color: #1DA0A8;
+}
+.votecolor3{
+     background-color: #208EA3;
+}
+.votecolor4{
+     background-color: #227C9D;
+}
+.votecolor5{
+     background-color: #1F718F;
+}
+.votecolor6{
+     background-color: #1C6782;
+}
+     

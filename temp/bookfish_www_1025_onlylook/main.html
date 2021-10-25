@@ -1,0 +1,53 @@
+<!DOCPYTE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>專題呈現哦</title>
+    </head>
+
+
+    <style>
+        body{
+            background-color: #FEF9EF;
+            font-family: Consolas,"Times New Roman";
+        }
+
+    </style>
+
+    
+    <script src="jsss.js"></script>
+    <script src="submit_run.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/script/jquery.min.js"> </script>
+    <script src="show.js"></script>
+    <link rel="stylesheet" type="text/css" href="csss.css">
+    
+    <body style="text-align: center;">
+        <h1 id="title_name">MELEPS-多專家抗原表位預測系統</h1>
+        <div id="menu" class="ground">
+            <p>
+                <label for="title" class="ttext">title</label>
+                <input id="title" name="title" placeholder="(optional)"></input>
+            </p>
+            <p>
+                <label for="fasta" class="ttext">fasta</label> Please add header to the seqence</br>
+                <textarea id="fasta" name="fasta" rows="10px" cols="45px"></textarea>
+                </br></br>
+                <!--
+                <label for="other_fasta" class="ttext">additional_fasta</label> 請以">"做為每段序列的開頭(可不填)</br>
+                <textarea id="other_fasta" name="other_fasta" rows="8px" cols="45px"></textarea>
+                -->
+            </p>
+            <input type="checkbox" value="1" name="Product_1" id="weights">Use Weighted Recommendation Method<br>
+            <p>
+                <button id="more">Advanced Settings</button>
+                <table id="more_set" class="center"></table>
+            </p>
+            
+            <button id="submit">Submit</button>
+        </div>
+    </body>
+
+
+    </html>
