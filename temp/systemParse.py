@@ -8,8 +8,6 @@ Created on Wed Sep  1 00:04:42 2021
 from bs4 import BeautifulSoup
 import time
 import requests
-
-import db_connection as DB
 #-----------------------------------------------------------------------------#
 class ABCpred:
     def parse_web(self, FASTA):
@@ -102,38 +100,43 @@ class BCPREDS:
             epitope += result.text
         return epitope
 
-
+#
 #-----------------------------------------------------------------------------#
 class Bepipred2:
     
     def parse_web(self, FASTA):
-        url = "http://www.cbs.dtu.dk/cgi-bin/webface2.fcgi"
-        mydata = {"configfile" : "/usr/opt/www/pub/CBS/services/BepiPred-2.0/lyra.cf",
-                  "fasta" : FASTA.split('\n')[1],
-                  "uploadfile" : b""}
+        
+        #headers = { "User-Agent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36" }
+        #s = requests.session()
+        #s.headers.update(headers)
+       
+        url = "https://services.healthtech.dtu.dk/cgi-bin/webface2.cgi"
+        
+        #s.get(url)
+        
+        mydata = { "configfile" : "/var/www/html/services/BepiPred-2.0/webface.cf",
+                   "fasta" : FASTA,
+                   "uploadfile" : b""
+            }
         web_result = requests.post(url, data = mydata)
         soup = BeautifulSoup(web_result.text, 'html.parser')
         resultPageUrl = soup.find('noscript').find('a')['href']
         process_id = resultPageUrl.split('=')[1]
+        print(resultPageUrl)
         
         while(1):
-            result_web = requests.get(resultPageUrl)
-            soup = BeautifulSoup(result_web.text, 'html.parser')
-            progress = soup.find(id="progress")
-            if progress == None:
-                
-                try:
-                    result_json = "http://www.cbs.dtu.dk/services/BepiPred-2.0/tmp/" + process_id + "/results.json"
-                    myjson = requests.get(result_json).json()
-                    result = ["." if i < 0.5 else "E" for i in myjson["antigens"]['Sequence']['PRED']]
-                    break
-                except:
-                    return "err"
-            else:
+            try:
+                result_json = "https://services.healthtech.dtu.dk/services/BepiPred-2.0/tmp/" + process_id + "/results.json"
+                myjson = requests.get(result_json).json()
+                break
+            except:
                 print(">>>still running")
                 time.sleep(10)
+                continue
+            
+        tmp = list(myjson["antigens"].keys())
+        result = ["." if i < 0.5 else "E" for i in myjson['antigens'][tmp[0]]['PRED']]
         return "".join(result)
-    
 
 #-----------------------------------------------------------------------------#
 class LBtope:
@@ -234,22 +237,7 @@ class LEPS:
 
 
 if __name__ == "__main__":
-    
-    data = DB.SEQ_COLLECTION.find_one({"seq_id" : "P15252"})
-    FASTA = "\n".join([data['FASTA'].split('\n')[0],"".join(data['FASTA'].split('\n')[1:])])
-    print(FASTA.split('\n')[1])
-    print(len(FASTA.split('\n')[1]))
-    
-    """
-    sys = ABCpred()
-    result = sys.parse_web(FASTA.replace(" ", ""))
-    print(len(result))
-    
-    """
-    
-    test = "MWRSLGLALALCLLPSGGTESQDQSSLCKQPPAWSIRDQDPMLNSNGSVTVVALLQASYLCILQASKLEDLRVKLKKEGYSNISYIVVNHQGISSRLKYTHLKNKVSEHIPVYQQEENQTDVWTLLNGSKDDFLIYDRCGRLVYHLGLPFSFLTFPYVEEAIKIAYCEKKCGNCSLTTLKDEDFCKRVSLATVDKTVETPSPHYHHEHHHNHGHQHLGSSELSENQQPGAPNAPTHPAPPGLHHHHKHKGQHRQGHPENRDMPASEDLQDLQKKLCRKRCINQLLCKLPTDSELAPRSCCHCRHLIFEKTGSAITQCKENLPSLCSQGLRAEENITESCQRLPPAAQISQQLIPTEASASRKNQAKKEPSN"
-    print(test)
-    print(len(test))
+    print()
 
 
 
@@ -261,5 +249,3 @@ if __name__ == "__main__":
 
 
 
-
-    

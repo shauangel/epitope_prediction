@@ -115,8 +115,25 @@ def vote_func(data): #傳入字典
     return rtn
 
 
+if __name__ == "__main__":
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 #test
-'''
+"""
 a={
     "sys":{
         "ABCpred":{
@@ -124,22 +141,6 @@ a={
                 "Vibrio brasiliensis": {
                     "PREDS":"..........................................................................................EEE.....EEEEEE..EEEEEEEE..E.........................................................................................................E.E..E........................................................................................................................",
                     "t-coffee":"MN\nKTLIALAVSAAA\nVATGANAAEIYSQDGNSIEMGGRAEAR\n\nLSLK---------------DGKAEDNSRVRLNFLGKAQITDGLYGVGFYEGEFTTADNGGETDSNSDSLTNRYAYAGLGG-AFGEITYGKNDGALGVITDFTDIMAYHGNS-AAMKINVADRADNMISYKGQFADLGVKASYRFADRTELNAAGNVATGNEAVASYGDNDADGYSLSAIYAIGDTGVKLGGGYASQYSGA-------QEQNEYMLAASYAISDFYFAGTFTDGQLAE------ENADYTGYEFATAYTLDKTVFTATYNNAETDS-------ETSADNVAIDATYYFKPNFRGYVSYNFNLISEGDAYGKVGANGTATKADAEDEIALGLRYDF",
-                }, 
-                "Aliivibrio fischeri": {
-                    "PREDS":".........................E.E..E..................................E.............EEEEEE.E........................................................................E.........................................................EE.................................E.............................................EE..EEE.EEEEEE.........",
-                    "t-coffee":"MNKKVLALAVAAITSAGAVNAAELYKDEAQ\nSIEMGGRAEARLAMK---------------DGDAADNTRIRLNFKGTTQISDGLYGVGFWEGEFTTNDAV----NPNGNLENRYTYAGIGG-NFGEVTYGKNDGALGVITDFTDIMAYHGNS-AAYKLAVADREDNAIAYKGQFGDFAFKANYRFDDAAA-----------------NQESNDGFSTSGIYAFGDSGFKLGAGYADQG-----------TDNEAMVAGSMTMGDFYFAGTFTTGEVV--------DLDYTGFEVAGAYTMGKTVFTATYNNADHDTNALTVANNENADNFAVDATYFFNANFRTYISYNLNLLDDDAL-K------GITKAMTEDEVALGMRYDF",
-                    }, 
-                "Enterovibrio norvegicus": {
-                    "PREDS":"..................EEEEEEEEEEEEEEE...............................E.............E.............E.....EEEE......E........................EE........EEEE.................................................EEEEEEE......E...............EEE.E.E...E...E.....................................................EEEE............",
-                    "t-coffee":"MNKTFIALAVAALA-STSVSAA\n\nEIFNDGTSSMAIGGRAEARASIK---------------DGDMNDASRVRINVLGTTQISEEAYGVGFFEREFKSNK---------DSDENRYLFAGIGT-EYGLVTYGKNDGSLGMITDFTDIMSYHGAA-ASSKITVADRTDNNIAYKGEFGGLTVKANYVGNN---------------------ETIDKGYSLGAVYAM-ENGLAMGLGYADQDNLT------KTTESQIEAAVSYTMGDIYVAALYKDGESNV----SGSDKDLTGYELAAAYTMGQTKFTTTYGKAETES-------DDTADSIAIDATHYFNGNFRTYASYNFNLLDADK----------VGKAKAEDELVFGLRYDF",
-                }, 
-                "Grimontia hollisae": {
-                    "PREDS":".................EEEEEEEEEE...E.....E.................................EEEEEEEEEEEEEEEEEEE..............EEEEE.................................EEEEEEEEEEEEEE........................................................................E...............E..............................................................E...E..EEEE............",
-                    "t-coffee":"MNKKLIALAVAAVA-STSVSAAEIFNDG\nTSSLAIGGRAEARAAIK---------------DGDVNDNSRVRLNVMGTTQIAEGAYGIGFFEQEFTTNDAV----PDGEKDETRYLFAGIGS-DYGLVTYGKNDGSLGVITDFTDIMAYHGNG-AGAKIAVADRTDNNLGYMGEFGGLTVKANYVFDTVSEGINN-----------TVRTDRVGGYSASAIYNF-DFGLALGLGYADQGKND------IDAESQAMAAASYTVGDFYFAGLFADGEFGQ----GVYHTETAGFELAAAYTMNQTKFTATYNYQEAEMAG---IKYDTVDQIAIDATHFFNDNFRAYASYNFNLLDEKDV---------AHKLDAEDELVFGLRYDF",
-                }, 
-                "Photobacterium phosphoreum": {
-                    "PREDS":"...........................................................................................................E...................EE...........................EEEEE.EEEEEE.........EE....E.E.....EEEEE...................E...EEE........................EE.................E.EE..................EEEE.......................................E......................",
-                    "t-coffee":"MNKNLIA\nLAVAAATFSGAASAATVYSDDTSSLAIGGRVEARALLSENAKNENAPLLTQQTSNDVTDISRVRVNIDAKTQIADGVQGIGYFEREFKSDN---------ANDENRYMYAGVNSDKYGQIVYGKADGSLGMITDFTDIMAYAGSVVGGSKLAVSDRTSNNLAYSGTFNNLTFKANYVFDGAAYN-DT-----------TGQKTNQNGFSTAAKYTVGDTGLALGVGYAQQKDQTAANNSVNQTSKQTFAVASYTIGDLYFGGLYKYGHRDATNLVTNDLTDSQGYEFAAAYTMGKAVFTTTYGFMKDERNT-SGAYDELANAVSVDGTYYFNSNFRTYASYTYNMLDKNK----------VGKVAASDQVVLGARYDF",
                 }
             },
             "f":0.3
@@ -149,22 +150,6 @@ a={
                 "Vibrio brasiliensis": {
                     "PREDS":".............EEEEEEE.EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE..EEEE..EEEEEEEEEE..EEEE..........EE.......EEEEEEE..EEEEEEE...EEEEEE.EEEEEEEEEEEEEEEEEEEEEE..EEEE..EEEEEEEEEE..EEEE......EEEEEE.......EEE......EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE.......EEE.....EEEEEEEE....EEEE.......EEEEE.....EEEEEE.EEEEEEEEE.EEEEEE.........E.........EEEEEEEEEEEEEEEE.EEEEE....EEEEEEEEEEEEEEEE...........",
                     "t-coffee":"MNKTLIALAVSAAAVATGANAAEIYSQDGNSIEMGGRAEARLSLK---------------DGKAEDNSRVRLNFLGKAQITDGLYGVGFYEGEFTTADNGGETDSNSDSLTNRYAYAGLGG-AFGEITYGKNDGALGVITDFTDIMAYHGNS-AAMKINVADRADNMISYKGQFADLGVKASYRFADRTELNAAGNVATGNEAVASYGDNDADGYSLSAIYAIGDTGVKLGGGYASQYSGA-------QEQNEYMLAASYAISDFYFAGTFTDGQLAE------ENADYTGYEFATAYTLDKTVFTATYNNAETDS-------ETSADNVAIDATYYFKPNFRGYVSYNFNLISEGDAYGKVGANGTATKADAEDEIALGLRYDF"
-                }, 
-                "Aliivibrio fischeri": {
-                    "PREDS":".............EEEEEEE......EEE......................EEEEEEEEEE..EEEE..EEEEEEEEEEEEEEEE...................EEEEEEEEEEEEEEEE...EEE......EEEEEEEEEEEEEEEE..EEEE..EEEEEEEEEEEEEEEEEEEEEEEEEEEEE................EEEEEEEEE...EEEE...........E.............EE.........EEEEE...EEEEEEEE....EEEE......EEEEEE..EEEEEEEEEEEEEEEEEEEEEE......EEE......EEEEEEEEEEEEEEEE............",
-                    "t-coffee":"MNKKVLALAVAAITSAGAVNAAELYKDEAQSIEMGGRAEARLAMK---------------DGDAADNTRIRLNFKGTTQISDGLYGVGFWEGEFTTNDAV----NPNGNLENRYTYAGIGG-NFGEVTYGKNDGALGVITDFTDIMAYHGNS-AAYKLAVADREDNAIAYKGQFGDFAFKANYRFDDAAA-----------------NQESNDGFSTSGIYAFGDSGFKLGAGYADQG-----------TDNEAMVAGSMTMGDFYFAGTFTTGEVV--------DLDYTGFEVAGAYTMGKTVFTATYNNADHDTNALTVANNENADNFAVDATYFFNANFRTYISYNLNLLDDDAL-K------GITKAMTEDEVALGMRYDF",
-                }, 
-                "Enterovibrio norvegicus": {
-                    "PREDS":"..........EEEEEEE.EEEEEEEE......................EEEEE...................EEEEEEEEE................EEEEEEEEEE..................EEEEEEEEEEEEEEEE.........................................EEEE..EEEEEEEEEEEEEEEEEEEEEEEEE.....E.....EEEEEEEEEE.EEEEE....EEEEEEE...EEEEEE...EEEEEEEEEEEEEEEEEEEEEEEEEEEEE.....EEEE.....EEEEEEE...EEEEEE..........",
-                    "t-coffee":"MNKTFIALAVAALA-STSVSAAEIFNDGTSSMAIGGRAEARASIK---------------DGDMNDASRVRINVLGTTQISEEAYGVGFFEREFKSNK---------DSDENRYLFAGIGT-EYGLVTYGKNDGSLGMITDFTDIMSYHGAA-ASSKITVADRTDNNIAYKGEFGGLTVKANYVGNN---------------------ETIDKGYSLGAVYAM-ENGLAMGLGYADQDNLT------KTTESQIEAAVSYTMGDIYVAALYKDGESNV----SGSDKDLTGYELAAAYTMGQTKFTTTYGKAETES-------DDTADSIAIDATHYFNGNFRTYASYNFNLLDADK----------VGKAKAEDELVFGLRYDF",
-                }, 
-                "Grimontia hollisae": {
-                    "PREDS":"............EEEEEEEEE.............................E......EEEEEEEEEEEEEEEE................EEEEEEE.EEEEEEEE.EEEEEEE....EEEEE.EEEEEEEEEE..EEEE..EEEEEEEEEEEEEEEEEEEEEEE....EE.........EEEEE.......EEEE......EEEEEE.....EEEEE..EEEEEEEEE...EEEE..EEEEEEEEEEEEEEEE....EEEEEE....EEEEEE.EEEEEEEEEEEEEEEEEEEEEE.....EEE..........EEE......EEEEEEE....EEEEE...........",
-                    "t-coffee":"MNKKLIALAVAAVA-STSVSAAEIFNDGTSSLAIGGRAEARAAIK---------------DGDVNDNSRVRLNVMGTTQIAEGAYGIGFFEQEFTTNDAV----PDGEKDETRYLFAGIGS-DYGLVTYGKNDGSLGVITDFTDIMAYHGNG-AGAKIAVADRTDNNLGYMGEFGGLTVKANYVFDTVSEGINN-----------TVRTDRVGGYSASAIYNF-DFGLALGLGYADQGKND------IDAESQAMAAASYTVGDFYFAGLFADGEFGQ----GVYHTETAGFELAAAYTMNQTKFTATYNYQEAEMAG---IKYDTVDQIAIDATHFFNDNFRAYASYNFNLLDEKDV---------AHKLDAEDELVFGLRYDF",
-                }, 
-                "Photobacterium phosphoreum": {
-                    "PREDS":"...........EEEEEE..EEEEEEEE...EEEEE....EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE....EEEEEE.......EEE......EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE.EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE.EEEEE..........................EEEE.......EEEEE.....EEEEEEEEEEEEEEEE..EEEE..EEEEEEEEEEEEEEEE......EEE...EEEEEEEEEEEEEEEE......EEE.....EEEEEEEE..EEEEEE..........",
-                    "t-coffee":"MNKNLIALAVAAATFSGAASAATVYSDDTSSLAIGGRVEARALLSENAKNENAPLLTQQTSNDVTDISRVRVNIDAKTQIADGVQGIGYFEREFKSDN---------ANDENRYMYAGVNSDKYGQIVYGKADGSLGMITDFTDIMAYAGSVVGGSKLAVSDRTSNNLAYSGTFNNLTFKANYVFDGAAYN-DT-----------TGQKTNQNGFSTAAKYTVGDTGLALGVGYAQQKDQTAANNSVNQTSKQTFAVASYTIGDLYFGGLYKYGHRDATNLVTNDLTDSQGYEFAAAYTMGKAVFTTTYGFMKDERNT-SGAYDELANAVSVDGTYYFNSNFRTYASYTYNMLDKNK----------VGKVAASDQVVLGARYDF",
                 }
             },
             "f":0.3
@@ -174,22 +159,6 @@ a={
                 "Vibrio brasiliensis": {
                     "PREDS":"..........................................................................................EEE.....EEEEEE..EEEEEEEE..E.........................................................................................................E.E..E........................................................................................................................",
                     "t-coffee":"MN\nKTLIALAVSAAA\nVATGANAAEIYSQDGNSIEMGGRAEAR\n\nLSLK---------------DGKAEDNSRVRLNFLGKAQITDGLYGVGFYEGEFTTADNGGETDSNSDSLTNRYAYAGLGG-AFGEITYGKNDGALGVITDFTDIMAYHGNS-AAMKINVADRADNMISYKGQFADLGVKASYRFADRTELNAAGNVATGNEAVASYGDNDADGYSLSAIYAIGDTGVKLGGGYASQYSGA-------QEQNEYMLAASYAISDFYFAGTFTDGQLAE------ENADYTGYEFATAYTLDKTVFTATYNNAETDS-------ETSADNVAIDATYYFKPNFRGYVSYNFNLISEGDAYGKVGANGTATKADAEDEIALGLRYDF",
-                }, 
-                "Aliivibrio fischeri": {
-                    "PREDS":".........................E.E..E..................................E.............EEEEEE.E........................................................................E.........................................................EE.................................E.............................................EE..EEE.EEEEEE.........",
-                    "t-coffee":"MNKKVLALAVAAITSAGAVNAAELYKDEAQ\nSIEMGGRAEARLAMK---------------DGDAADNTRIRLNFKGTTQISDGLYGVGFWEGEFTTNDAV----NPNGNLENRYTYAGIGG-NFGEVTYGKNDGALGVITDFTDIMAYHGNS-AAYKLAVADREDNAIAYKGQFGDFAFKANYRFDDAAA-----------------NQESNDGFSTSGIYAFGDSGFKLGAGYADQG-----------TDNEAMVAGSMTMGDFYFAGTFTTGEVV--------DLDYTGFEVAGAYTMGKTVFTATYNNADHDTNALTVANNENADNFAVDATYFFNANFRTYISYNLNLLDDDAL-K------GITKAMTEDEVALGMRYDF",
-                    }, 
-                "Enterovibrio norvegicus": {
-                    "PREDS":"..................EEEEEEEEEEEEEEE...............................E.............E.............E.....EEEE......E........................EE........EEEE.................................................EEEEEEE......E...............EEE.E.E...E...E.....................................................EEEE............",
-                    "t-coffee":"MNKTFIALAVAALA-STSVSAA\n\nEIFNDGTSSMAIGGRAEARASIK---------------DGDMNDASRVRINVLGTTQISEEAYGVGFFEREFKSNK---------DSDENRYLFAGIGT-EYGLVTYGKNDGSLGMITDFTDIMSYHGAA-ASSKITVADRTDNNIAYKGEFGGLTVKANYVGNN---------------------ETIDKGYSLGAVYAM-ENGLAMGLGYADQDNLT------KTTESQIEAAVSYTMGDIYVAALYKDGESNV----SGSDKDLTGYELAAAYTMGQTKFTTTYGKAETES-------DDTADSIAIDATHYFNGNFRTYASYNFNLLDADK----------VGKAKAEDELVFGLRYDF",
-                }, 
-                "Grimontia hollisae": {
-                    "PREDS":".................EEEEEEEEEE...E.....E.................................EEEEEEEEEEEEEEEEEEE..............EEEEE.................................EEEEEEEEEEEEEE........................................................................E...............E..............................................................E...E..EEEE............",
-                    "t-coffee":"MNKKLIALAVAAVA-STSVSAAEIFNDG\nTSSLAIGGRAEARAAIK---------------DGDVNDNSRVRLNVMGTTQIAEGAYGIGFFEQEFTTNDAV----PDGEKDETRYLFAGIGS-DYGLVTYGKNDGSLGVITDFTDIMAYHGNG-AGAKIAVADRTDNNLGYMGEFGGLTVKANYVFDTVSEGINN-----------TVRTDRVGGYSASAIYNF-DFGLALGLGYADQGKND------IDAESQAMAAASYTVGDFYFAGLFADGEFGQ----GVYHTETAGFELAAAYTMNQTKFTATYNYQEAEMAG---IKYDTVDQIAIDATHFFNDNFRAYASYNFNLLDEKDV---------AHKLDAEDELVFGLRYDF",
-                }, 
-                "Photobacterium phosphoreum": {
-                    "PREDS":"...........................................................................................................E...................EE...........................EEEEE.EEEEEE.........EE....E.E.....EEEEE...................E...EEE........................EE.................E.EE..................EEEE.......................................E......................",
-                    "t-coffee":"MNKNLIA\nLAVAAATFSGAASAATVYSDDTSSLAIGGRVEARALLSENAKNENAPLLTQQTSNDVTDISRVRVNIDAKTQIADGVQGIGYFEREFKSDN---------ANDENRYMYAGVNSDKYGQIVYGKADGSLGMITDFTDIMAYAGSVVGGSKLAVSDRTSNNLAYSGTFNNLTFKANYVFDGAAYN-DT-----------TGQKTNQNGFSTAAKYTVGDTGLALGVGYAQQKDQTAANNSVNQTSKQTFAVASYTIGDLYFGGLYKYGHRDATNLVTNDLTDSQGYEFAAAYTMGKAVFTTTYGFMKDERNT-SGAYDELANAVSVDGTYYFNSNFRTYASYTYNMLDKNK----------VGKVAASDQVVLGARYDF",
                 }
             },
             "f":0.3
@@ -199,22 +168,6 @@ a={
                 "Vibrio brasiliensis": {
                     "PREDS":"..........................................................................................EEE.....EEEEEE..EEEEEEEE..E.........................................................................................................E.E..E........................................................................................................................",
                     "t-coffee":"MN\nKTLIALAVSAAA\nVATGANAAEIYSQDGNSIEMGGRAEAR\n\nLSLK---------------DGKAEDNSRVRLNFLGKAQITDGLYGVGFYEGEFTTADNGGETDSNSDSLTNRYAYAGLGG-AFGEITYGKNDGALGVITDFTDIMAYHGNS-AAMKINVADRADNMISYKGQFADLGVKASYRFADRTELNAAGNVATGNEAVASYGDNDADGYSLSAIYAIGDTGVKLGGGYASQYSGA-------QEQNEYMLAASYAISDFYFAGTFTDGQLAE------ENADYTGYEFATAYTLDKTVFTATYNNAETDS-------ETSADNVAIDATYYFKPNFRGYVSYNFNLISEGDAYGKVGANGTATKADAEDEIALGLRYDF",
-                }, 
-                "Aliivibrio fischeri": {
-                    "PREDS":".........................E.E..E..................................E.............EEEEEE.E........................................................................E.........................................................EE.................................E.............................................EE..EEE.EEEEEE.........",
-                    "t-coffee":"MNKKVLALAVAAITSAGAVNAAELYKDEAQ\nSIEMGGRAEARLAMK---------------DGDAADNTRIRLNFKGTTQISDGLYGVGFWEGEFTTNDAV----NPNGNLENRYTYAGIGG-NFGEVTYGKNDGALGVITDFTDIMAYHGNS-AAYKLAVADREDNAIAYKGQFGDFAFKANYRFDDAAA-----------------NQESNDGFSTSGIYAFGDSGFKLGAGYADQG-----------TDNEAMVAGSMTMGDFYFAGTFTTGEVV--------DLDYTGFEVAGAYTMGKTVFTATYNNADHDTNALTVANNENADNFAVDATYFFNANFRTYISYNLNLLDDDAL-K------GITKAMTEDEVALGMRYDF",
-                    }, 
-                "Enterovibrio norvegicus": {
-                    "PREDS":"..................EEEEEEEEEEEEEEE...............................E.............E.............E.....EEEE......E........................EE........EEEE.................................................EEEEEEE......E...............EEE.E.E...E...E.....................................................EEEE............",
-                    "t-coffee":"MNKTFIALAVAALA-STSVSAA\n\nEIFNDGTSSMAIGGRAEARASIK---------------DGDMNDASRVRINVLGTTQISEEAYGVGFFEREFKSNK---------DSDENRYLFAGIGT-EYGLVTYGKNDGSLGMITDFTDIMSYHGAA-ASSKITVADRTDNNIAYKGEFGGLTVKANYVGNN---------------------ETIDKGYSLGAVYAM-ENGLAMGLGYADQDNLT------KTTESQIEAAVSYTMGDIYVAALYKDGESNV----SGSDKDLTGYELAAAYTMGQTKFTTTYGKAETES-------DDTADSIAIDATHYFNGNFRTYASYNFNLLDADK----------VGKAKAEDELVFGLRYDF",
-                }, 
-                "Grimontia hollisae": {
-                    "PREDS":".................EEEEEEEEEE...E.....E.................................EEEEEEEEEEEEEEEEEEE..............EEEEE.................................EEEEEEEEEEEEEE........................................................................E...............E..............................................................E...E..EEEE............",
-                    "t-coffee":"MNKKLIALAVAAVA-STSVSAAEIFNDG\nTSSLAIGGRAEARAAIK---------------DGDVNDNSRVRLNVMGTTQIAEGAYGIGFFEQEFTTNDAV----PDGEKDETRYLFAGIGS-DYGLVTYGKNDGSLGVITDFTDIMAYHGNG-AGAKIAVADRTDNNLGYMGEFGGLTVKANYVFDTVSEGINN-----------TVRTDRVGGYSASAIYNF-DFGLALGLGYADQGKND------IDAESQAMAAASYTVGDFYFAGLFADGEFGQ----GVYHTETAGFELAAAYTMNQTKFTATYNYQEAEMAG---IKYDTVDQIAIDATHFFNDNFRAYASYNFNLLDEKDV---------AHKLDAEDELVFGLRYDF",
-                }, 
-                "Photobacterium phosphoreum": {
-                    "PREDS":"...........................................................................................................E...................EE...........................EEEEE.EEEEEE.........EE....E.E.....EEEEE...................E...EEE........................EE.................E.EE..................EEEE.......................................E......................",
-                    "t-coffee":"MNKNLIA\nLAVAAATFSGAASAATVYSDDTSSLAIGGRVEARALLSENAKNENAPLLTQQTSNDVTDISRVRVNIDAKTQIADGVQGIGYFEREFKSDN---------ANDENRYMYAGVNSDKYGQIVYGKADGSLGMITDFTDIMAYAGSVVGGSKLAVSDRTSNNLAYSGTFNNLTFKANYVFDGAAYN-DT-----------TGQKTNQNGFSTAAKYTVGDTGLALGVGYAQQKDQTAANNSVNQTSKQTFAVASYTIGDLYFGGLYKYGHRDATNLVTNDLTDSQGYEFAAAYTMGKAVFTTTYGFMKDERNT-SGAYDELANAVSVDGTYYFNSNFRTYASYTYNMLDKNK----------VGKVAASDQVVLGARYDF",
                 }
             },
             "f":0.3
@@ -224,22 +177,6 @@ a={
                 "Vibrio brasiliensis": {
                     "PREDS":"..........................................................................................EEE.....EEEEEE..EEEEEEEE..E.........................................................................................................E.E..E........................................................................................................................",
                     "t-coffee":"MN\nKTLIALAVSAAA\nVATGANAAEIYSQDGNSIEMGGRAEAR\n\nLSLK---------------DGKAEDNSRVRLNFLGKAQITDGLYGVGFYEGEFTTADNGGETDSNSDSLTNRYAYAGLGG-AFGEITYGKNDGALGVITDFTDIMAYHGNS-AAMKINVADRADNMISYKGQFADLGVKASYRFADRTELNAAGNVATGNEAVASYGDNDADGYSLSAIYAIGDTGVKLGGGYASQYSGA-------QEQNEYMLAASYAISDFYFAGTFTDGQLAE------ENADYTGYEFATAYTLDKTVFTATYNNAETDS-------ETSADNVAIDATYYFKPNFRGYVSYNFNLISEGDAYGKVGANGTATKADAEDEIALGLRYDF",
-                }, 
-                "Aliivibrio fischeri": {
-                    "PREDS":".........................E.E..E..................................E.............EEEEEE.E........................................................................E.........................................................EE.................................E.............................................EE..EEE.EEEEEE.........",
-                    "t-coffee":"MNKKVLALAVAAITSAGAVNAAELYKDEAQ\nSIEMGGRAEARLAMK---------------DGDAADNTRIRLNFKGTTQISDGLYGVGFWEGEFTTNDAV----NPNGNLENRYTYAGIGG-NFGEVTYGKNDGALGVITDFTDIMAYHGNS-AAYKLAVADREDNAIAYKGQFGDFAFKANYRFDDAAA-----------------NQESNDGFSTSGIYAFGDSGFKLGAGYADQG-----------TDNEAMVAGSMTMGDFYFAGTFTTGEVV--------DLDYTGFEVAGAYTMGKTVFTATYNNADHDTNALTVANNENADNFAVDATYFFNANFRTYISYNLNLLDDDAL-K------GITKAMTEDEVALGMRYDF",
-                    }, 
-                "Enterovibrio norvegicus": {
-                    "PREDS":"..................EEEEEEEEEEEEEEE...............................E.............E.............E.....EEEE......E........................EE........EEEE.................................................EEEEEEE......E...............EEE.E.E...E...E.....................................................EEEE............",
-                    "t-coffee":"MNKTFIALAVAALA-STSVSAA\n\nEIFNDGTSSMAIGGRAEARASIK---------------DGDMNDASRVRINVLGTTQISEEAYGVGFFEREFKSNK---------DSDENRYLFAGIGT-EYGLVTYGKNDGSLGMITDFTDIMSYHGAA-ASSKITVADRTDNNIAYKGEFGGLTVKANYVGNN---------------------ETIDKGYSLGAVYAM-ENGLAMGLGYADQDNLT------KTTESQIEAAVSYTMGDIYVAALYKDGESNV----SGSDKDLTGYELAAAYTMGQTKFTTTYGKAETES-------DDTADSIAIDATHYFNGNFRTYASYNFNLLDADK----------VGKAKAEDELVFGLRYDF",
-                }, 
-                "Grimontia hollisae": {
-                    "PREDS":".................EEEEEEEEEE...E.....E.................................EEEEEEEEEEEEEEEEEEE..............EEEEE.................................EEEEEEEEEEEEEE........................................................................E...............E..............................................................E...E..EEEE............",
-                    "t-coffee":"MNKKLIALAVAAVA-STSVSAAEIFNDG\nTSSLAIGGRAEARAAIK---------------DGDVNDNSRVRLNVMGTTQIAEGAYGIGFFEQEFTTNDAV----PDGEKDETRYLFAGIGS-DYGLVTYGKNDGSLGVITDFTDIMAYHGNG-AGAKIAVADRTDNNLGYMGEFGGLTVKANYVFDTVSEGINN-----------TVRTDRVGGYSASAIYNF-DFGLALGLGYADQGKND------IDAESQAMAAASYTVGDFYFAGLFADGEFGQ----GVYHTETAGFELAAAYTMNQTKFTATYNYQEAEMAG---IKYDTVDQIAIDATHFFNDNFRAYASYNFNLLDEKDV---------AHKLDAEDELVFGLRYDF",
-                }, 
-                "Photobacterium phosphoreum": {
-                    "PREDS":"...........................................................................................................E...................EE...........................EEEEE.EEEEEE.........EE....E.E.....EEEEE...................E...EEE........................EE.................E.EE..................EEEE.......................................E......................",
-                    "t-coffee":"MNKNLIA\nLAVAAATFSGAASAATVYSDDTSSLAIGGRVEARALLSENAKNENAPLLTQQTSNDVTDISRVRVNIDAKTQIADGVQGIGYFEREFKSDN---------ANDENRYMYAGVNSDKYGQIVYGKADGSLGMITDFTDIMAYAGSVVGGSKLAVSDRTSNNLAYSGTFNNLTFKANYVFDGAAYN-DT-----------TGQKTNQNGFSTAAKYTVGDTGLALGVGYAQQKDQTAANNSVNQTSKQTFAVASYTIGDLYFGGLYKYGHRDATNLVTNDLTDSQGYEFAAAYTMGKAVFTTTYGFMKDERNT-SGAYDELANAVSVDGTYYFNSNFRTYASYTYNMLDKNK----------VGKVAASDQVVLGARYDF",
                 }
             },
             "f":0.3
@@ -249,22 +186,6 @@ a={
                 "Vibrio brasiliensis": {
                     "PREDS":"..........................................................................................EEE.....EEEEEE..EEEEEEEE..E.........................................................................................................E.E..E........................................................................................................................",
                     "t-coffee":"MN\nKTLIALAVSAAA\nVATGANAAEIYSQDGNSIEMGGRAEAR\n\nLSLK---------------DGKAEDNSRVRLNFLGKAQITDGLYGVGFYEGEFTTADNGGETDSNSDSLTNRYAYAGLGG-AFGEITYGKNDGALGVITDFTDIMAYHGNS-AAMKINVADRADNMISYKGQFADLGVKASYRFADRTELNAAGNVATGNEAVASYGDNDADGYSLSAIYAIGDTGVKLGGGYASQYSGA-------QEQNEYMLAASYAISDFYFAGTFTDGQLAE------ENADYTGYEFATAYTLDKTVFTATYNNAETDS-------ETSADNVAIDATYYFKPNFRGYVSYNFNLISEGDAYGKVGANGTATKADAEDEIALGLRYDF",
-                }, 
-                "Aliivibrio fischeri": {
-                    "PREDS":".........................E.E..E..................................E.............EEEEEE.E........................................................................E.........................................................EE.................................E.............................................EE..EEE.EEEEEE.........",
-                    "t-coffee":"MNKKVLALAVAAITSAGAVNAAELYKDEAQ\nSIEMGGRAEARLAMK---------------DGDAADNTRIRLNFKGTTQISDGLYGVGFWEGEFTTNDAV----NPNGNLENRYTYAGIGG-NFGEVTYGKNDGALGVITDFTDIMAYHGNS-AAYKLAVADREDNAIAYKGQFGDFAFKANYRFDDAAA-----------------NQESNDGFSTSGIYAFGDSGFKLGAGYADQG-----------TDNEAMVAGSMTMGDFYFAGTFTTGEVV--------DLDYTGFEVAGAYTMGKTVFTATYNNADHDTNALTVANNENADNFAVDATYFFNANFRTYISYNLNLLDDDAL-K------GITKAMTEDEVALGMRYDF",
-                    }, 
-                "Enterovibrio norvegicus": {
-                    "PREDS":"..................EEEEEEEEEEEEEEE...............................E.............E.............E.....EEEE......E........................EE........EEEE.................................................EEEEEEE......E...............EEE.E.E...E...E.....................................................EEEE............",
-                    "t-coffee":"MNKTFIALAVAALA-STSVSAA\n\nEIFNDGTSSMAIGGRAEARASIK---------------DGDMNDASRVRINVLGTTQISEEAYGVGFFEREFKSNK---------DSDENRYLFAGIGT-EYGLVTYGKNDGSLGMITDFTDIMSYHGAA-ASSKITVADRTDNNIAYKGEFGGLTVKANYVGNN---------------------ETIDKGYSLGAVYAM-ENGLAMGLGYADQDNLT------KTTESQIEAAVSYTMGDIYVAALYKDGESNV----SGSDKDLTGYELAAAYTMGQTKFTTTYGKAETES-------DDTADSIAIDATHYFNGNFRTYASYNFNLLDADK----------VGKAKAEDELVFGLRYDF",
-                }, 
-                "Grimontia hollisae": {
-                    "PREDS":".................EEEEEEEEEE...E.....E.................................EEEEEEEEEEEEEEEEEEE..............EEEEE.................................EEEEEEEEEEEEEE........................................................................E...............E..............................................................E...E..EEEE............",
-                    "t-coffee":"MNKKLIALAVAAVA-STSVSAAEIFNDG\nTSSLAIGGRAEARAAIK---------------DGDVNDNSRVRLNVMGTTQIAEGAYGIGFFEQEFTTNDAV----PDGEKDETRYLFAGIGS-DYGLVTYGKNDGSLGVITDFTDIMAYHGNG-AGAKIAVADRTDNNLGYMGEFGGLTVKANYVFDTVSEGINN-----------TVRTDRVGGYSASAIYNF-DFGLALGLGYADQGKND------IDAESQAMAAASYTVGDFYFAGLFADGEFGQ----GVYHTETAGFELAAAYTMNQTKFTATYNYQEAEMAG---IKYDTVDQIAIDATHFFNDNFRAYASYNFNLLDEKDV---------AHKLDAEDELVFGLRYDF",
-                }, 
-                "Photobacterium phosphoreum": {
-                    "PREDS":"...........................................................................................................E...................EE...........................EEEEE.EEEEEE.........EE....E.E.....EEEEE...................E...EEE........................EE.................E.EE..................EEEE.......................................E......................",
-                    "t-coffee":"MNKNLIA\nLAVAAATFSGAASAATVYSDDTSSLAIGGRVEARALLSENAKNENAPLLTQQTSNDVTDISRVRVNIDAKTQIADGVQGIGYFEREFKSDN---------ANDENRYMYAGVNSDKYGQIVYGKADGSLGMITDFTDIMAYAGSVVGGSKLAVSDRTSNNLAYSGTFNNLTFKANYVFDGAAYN-DT-----------TGQKTNQNGFSTAAKYTVGDTGLALGVGYAQQKDQTAANNSVNQTSKQTFAVASYTIGDLYFGGLYKYGHRDATNLVTNDLTDSQGYEFAAAYTMGKAVFTTTYGFMKDERNT-SGAYDELANAVSVDGTYYFNSNFRTYASYTYNMLDKNK----------VGKVAASDQVVLGARYDF",
                 }
             },
             "f":0.3
@@ -274,6 +195,6 @@ a={
     "range": 0.5
 }
 
-print(vote_func(a))
+#print(vote_func(a))
 #vote_func(a)
-'''
+"""

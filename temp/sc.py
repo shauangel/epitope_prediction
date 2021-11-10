@@ -43,6 +43,8 @@ for i in dic:
                     pos=int(b[1:])
                     ans[i]= ans[i][:pos] + 'E' + ans[i][pos+1:]
 
+
+
 amino=["A","F","C","D","N","E","Q","G","H","L","I","K","M","P","R","S","T","V","W","Y"]
 ptotal = {}
 ntotal = {}
