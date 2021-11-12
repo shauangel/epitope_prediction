@@ -19,11 +19,11 @@ class ABCpred:
                    "Threshold" : 0.51,
                    "window" : 16,
                    "filter" : "on" }
-        result = requests.post(url, data = mydata)   
+        result = requests.post(url, data = mydata)
         #bs4解析網頁內容，取得預測結果
         soup = BeautifulSoup(result.text, 'html.parser')
         pre = soup.find_all('pre')
-        overlap_list = pre[2].get_text(separator = '\n').strip()        
+        overlap_list = pre[2].get_text(separator = '\n').strip()
         seq_list = overlap_list.split('\n')
         
         #轉換網頁結果至所需格式
@@ -55,7 +55,7 @@ class BcePred:
                  "seqfile" : b"",
                  "Threshold" : [2, 1.9, 2, 1.9, 2.4, 2.3, 1.8, 1.9],
                  "propno" : ["hydro", "flexi", "access", "turns", "surface", "polar", "antipro"]}
-        web_result = requests.post(url, data = mydata)  
+        web_result = requests.post(url, data = mydata)
         
         #解析網頁資訊
         soup = BeautifulSoup(web_result.text, 'html.parser')
@@ -88,7 +88,7 @@ class BCPREDS:
                   "specificity" : 75,
                   "overlap" : "yes",
                   "submit" : "Submit query"}
-        web_result = requests.post(url, data = mydata)        
+        web_result = requests.post(url, data = mydata)
         soup = BeautifulSoup(web_result.text, 'html.parser')
         try:
             fonts = soup.find_all('font', {'color' : 'red'})
